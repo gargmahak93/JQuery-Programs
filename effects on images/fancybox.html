@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Fancybox/slider</title>
+<link href="../_css/style.css" rel="stylesheet">
+<link href="fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet">
+<script src="../_js/jquery-1.7.2.min.js"></script>
+<script src="../_js/jquery.easing.1.3.js"></script>
+<script src="fancybox/jquery.fancybox-1.3.4.min.js"></script>
+<script>
+$(document).ready(function() {
+	$('#gallery a').fancybox({
+		overlayColor: 'red',
+		overlayOpacity: 0.7,
+		transitionIn: 'elastic',
+		transitionOut: 'elastic',
+		easingIn: 'easeInSine',
+		easingOut: 'easeOutSine',
+		cyclic:'true'
+	});
+}); // end ready
+</script>
+</head>
+<body>
+<div class="wrapper">
+
+<div class="content">
+	<div class="main">
+		<h1 style="margin-left: 250px;">Slider</h1>
+		<div id="gallery">
+		<a href="../_images/large/slide1.jpg" rel="gallery"><img src="../_images/small/slide1_h.jpg" width="70" height="70" alt="golf balls"></a>
+		<a href="../_images/large/slide2.jpg" rel="gallery"><img src="../_images/small/slide2_h.jpg" width="70" height="70" alt="rock wall"></a>
+		<a href="../_images/large/slide3.jpg" rel="gallery"><img src="../_images/small/slide3_h.jpg" width="70" height="70" alt="old course"></a>
+		<a href="../_images/large/slide4.jpg" rel="gallery"><img src="../_images/small/slide4_h.jpg" width="70" height="70" alt="tees"></a>
+		<a href="../_images/large/slide5.jpg" rel="gallery"><img src="../_images/small/slide5_h.jpg" width="70" height="70" alt="tree"></a>
+		<a href="../_images/large/slide6.jpg" rel="gallery"><img src="../_images/small/slide6_h.jpg" width="70" height="70" alt="ocean course"></a></div>
+	</div>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,193 @@
+#caption {
+	position: absolute;
+	width: 	340px;
+	background-color: black;
+	bottom: 10px;
+	left: 24px;
+	padding: 5px;
+	border: 1px solid white;
+	color: white;
+}
+#figure {
+  position: relative;
+  width: 400px;
+  margin: 0 auto;
+}
+html{
+	background-color: green;
+}
+#dashboard {
+	width: 70px;
+	background-color: rgb(110,138,195);
+	padding: 20px 20px 0 20px;
+	position: absolute;
+	left: -92px;
+	z-index: 100;
+}
+#dashboard img {
+	margin-bottom: 20px;
+	border: 1px solid rgb(0,0,0);
+}
+#slide {
+	width: 300px;
+	position: absolute;
+	left: 560px;
+	top: 6px;
+	z-index: 100;
+}
+
+#open {
+	margin: 0;
+	cursor: pointer;
+	background: rgb(255,255,255)  url(../_images/open.png) no-repeat 8px 7px;
+	color: rgb(58,80,123);
+	padding: 5px 0 2px 30px;
+}
+
+#slide .close {
+	background-image: url(../_images/close.png);
+	background-color: rgb(110,138,195);	
+}
+
+#open:hover {
+	color: rgb(0,0,0);
+	background-color: rgb(110,138,195);	
+}
+
+#slide div {
+	padding: 10px 10px 10px 10px;
+	display: none;	
+	background-color: rgb(255,255,255);
+}
+#slide h5 {
+	display: inline;
+	text-align:right;
+	margin: 0 15px 0 0;
+	color: rgb(58,80,123);
+}
+#gallery1 {
+	float: left;
+	width: 90px;
+	margin-right: 30px;
+	margin-left: 10px;
+	border-right: white 1px dotted;
+}
+#gallery1 img {
+	display: inline-block;
+	margin: 0 0 10px 0;
+	border: 1px solid rgb(0,0,0);
+}
+#photo {
+	margin-left: 150px;
+	position: relative;
+}
+#photo img {
+	position: absolute;
+}
+#gallery a{
+	margin-left: 15px;
+}
+#gallery img {
+	border: 5px solid black;
+}
+form#order select, form#signup select {
+	display: inline-block;
+	margin-top: 8px;	
+}
+form#order input[type="radio"], form#signup input[type="radio"], form#signup input[type="checkbox"] {
+   display: inline-block;
+   margin-top: 10px;	
+}
+form .indent, #submit {
+	margin-left: 215px;	
+}
+form#order div, form#signup div{
+	padding-bottom: 10px;	
+}
+
+form#order .label, form#signup .label {
+	display: block;
+	clear: left;
+	float: left;
+	width: 175px;
+	text-align: right;
+	padding: 7px 15px 0 0;
+	text-transform: uppercase;	
+	font-weight: bold;
+}
+form#signup .label {
+	width: 200px;	
+}
+#signup label.error{
+		font-size: 0.8em;
+		color: #f00;
+		font-weight: bold;
+		display: block;
+		margin-left: 215px;
+	}
+#signup input.error, #signup select.error{
+		background: #FFA9B8;
+		border: 1px solid red;
+	}
+#signup .indent label.error {
+  margin-left: 0;
+}
+.labelBlock {
+	text-transform: uppercase;
+	font-weight: bold;	
+	display: block;
+	padding-bottom: 0 !important;
+	clear: both;
+	margin-top: 10px;
+}
+.tabs {
+	margin: 0;
+	padding: 0;	
+	zoom : 1;
+}
+.tabs li {
+	float: left;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.tabs a {
+	display: block;
+	text-decoration: none;
+	padding: 3px 5px;
+	margin-right: 10px;
+	border: 1px solid rgb(153,153,153);
+	margin-bottom: -1px;
+}
+.tabs .active {
+	border-bottom: 1px solid white;
+	background-color: white;
+	color: rgb(51,72,115);
+	position: relative;
+}
+
+.panelContainer {
+	clear: both;
+	margin-bottom: 25px;	
+	border: 1px solid rgb(153,153,153);	
+	background-color: white;
+	padding: 10px;
+}
+
+.panel h2 {
+	color: rgb(57,78,121);
+	text-shadow: none;		
+}
+.panel p {
+	color: black;	
+}
+.imgRight {
+	float: right;
+	margin-bottom: 5px;
+	margin-left: 5px;
+}
+.imgLeft {
+	float: left;
+	margin-bottom: 5px;
+	margin-right: 5px;
+}

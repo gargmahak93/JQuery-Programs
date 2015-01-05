@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Using .prevAll() and .nextAll()</title>
+<link href="../_css/style.css" rel="stylesheet">
+<style>
+.button {
+	width: 40px;
+	height: 40px;
+	background-color: white;
+	float: left;	
+	margin-right: 20px;
+}
+</style>
+<script src="../_js/jquery-1.7.2.min.js"></script>
+<script>
+$(document).ready(function() {
+  $('.button').click(function() {
+	  var $this=$(this)
+	  $this.css({
+		  'backgroundColor':'red',
+		  'opacity' : 1
+	  });
+	  $this.siblings('.button').css('backgroundColor','white');
+	  $this.prevAll('.button').fadeTo(250,.5);
+	  $this.nextAll('.button').fadeTo(250,1);
+  }); // end mouseOver
+}); // end ready
+</script>
+</head>
+<body>
+<div class="wrapper">
+	<div class="content">
+	  <div class="main">
+	    <h1>Using .prevAll and .nextAll()</h1>
+        <p>Click one of the boxes below</p>
+           <div class="button"></div>
+           <div class="button"></div>
+           <div class="button"></div>
+           <div class="button"></div>
+           <div class="button"></div>
+           <div class="button"></div>
+           <div class="button"></div>
+           <div class="button"></div>
+           <div class="button"></div>
+           <div class="button"></div>
+           <div class="button"></div>
+           
+	  </div>
+  </div>
+</div>
+</body>
+</html>
